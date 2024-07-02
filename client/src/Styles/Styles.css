@@ -1,0 +1,108 @@
+.main-font{
+    font-family: 'Sergio Trendy', sans-serif;
+}
+
+.main-color{
+    background: #E5E1EE !important;
+}
+
+.boton-registro{
+    background: #E5E1EE ;
+    color: black;
+    text-decoration: none;
+    border: 3px solid  #e4e2eb;
+    border-radius: 5px;
+}
+.linkH{
+    text-decoration: none;
+}
+
+.link{
+    text-decoration: none;
+    color: white !important;
+}
+
+.linkH:hover{
+    font-weight: 500;
+}
+
+.h2Title{
+    text-align: center;
+    font-size: 400%;
+}
+
+.link-evento{
+    background: #e4e2eb ;
+    color: black;
+    text-decoration: none;
+    border: 3px solid  #E5E1EE;
+    border-radius: 5px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.link-evento:hover{
+    font-weight: 500;
+}
+
+.container-boton{
+    display: table-cell;
+    vertical-align: middle
+}
+
+.foto-evento{
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+}
+
+
+/* FOOTER */
+.footer{
+    width: 100%;
+    height: 18%;
+    position: absolute;
+    bottom: 0;
+    background-color: #E5E1EE;
+    -webkit-mask-image: url(../images/background-footer.svg);
+    mask-image:url(../images/background-footer.svg);
+    mask-size: cover;
+}
+
+.f1{
+    animation: w1 7s linear infinite;
+}
+
+.f2{
+    animation: w2 5s linear -.125s infinite, desplazamiento 5s ease -.125s infinite;
+    opacity: 0.5;
+}
+
+@keyframes f1 {
+    0%{
+        margin-left: 0;
+    }
+    100%{
+        margin-left: -1600px;
+    }
+}
+
+@keyframes f2 {
+    0%{
+        margin-left: 0;
+    }
+    100%{
+        margin-left: -1600px;
+    }
+}
+
+@keyframes desplazamiento {
+    0%, 100%{
+        transform: translateY(-20px);
+    }
+
+    50%{
+        transform: translateY(10px);
+    }
+}
